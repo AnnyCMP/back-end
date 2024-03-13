@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
-    <p></p>
+    <p>A função sqrt calcula a raiz quadrada de um número.</p>
 
-         
+    <form action="sqrt.php" method="get">
+        <label for="number">Insira um número</label><br>
+        <input type="number" name="number" id="number" class="calculos" required><br>
+        <button type="Submit">Calcular raiz quadrada</button>
+    </form>
+
+    <?php
+    if(isset($_GET["number"])) {
+        $number = $_GET["number"];
+        echo "<p>A raiz quadrada de $number é: " . sqrt($number) . "</p>";
+    }
+    ?>
+
+    <button onclick="window.location.href = '../atividade.html';">Voltar</button>
 </body>
 </html>

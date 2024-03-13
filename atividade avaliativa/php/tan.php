@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
-    <p></p>
+    <p>A função tan retorna a tangente de um ângulo, em radianos.</p>
 
-         
+    <form action="tan.php" method="get">
+        <label for="angle">Insira o ângulo (em graus)</label><br>
+        <input type="number" name="angle" id="angle" class="calculos" required><br>
+        <button type="Submit">Calcular tangente</button>
+    </form>
+
+    <?php
+    if(isset($_GET["angle"])) {
+        $angle = $_GET["angle"];
+        $angle_rad = deg2rad($angle);
+        echo "<p>A tangente de $angle graus é: " . tan($angle_rad) . "</p>";
+    }
+    ?>
+
+    <button onclick="window.location.href = '../atividade.html';">Voltar</button>
 </body>
 </html>

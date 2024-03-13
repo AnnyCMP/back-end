@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
-    <p></p>
+    <p>A função max retorna o maior valor de um conjunto de valores ou o maior de dois valores.</p>
 
-         
+    <form action="max.php" method="get">
+        <label for="values">Insira os valores separados por vírgula</label><br>
+        <input type="text" name="values" id="values" class="calculos" required><br>
+        <button type="Submit">Calcular máximo</button>
+    </form>
+
+    <?php
+    if(isset($_GET["values"])) {
+        $values = explode(",", $_GET["values"]);
+        $max_value = max($values);
+        echo "<p>O maior valor é: $max_value</p>";
+    }
+    ?>
+
+    <button onclick="window.location.href = '../atividade.html';">Voltar</button>
 </body>
 </html>
