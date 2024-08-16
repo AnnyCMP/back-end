@@ -9,6 +9,41 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #e0e0e0;
+        }
+        header {
+            background-color: #978e8c;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Espaça logo e menu */
+            box-sizing: border-box;
+        }
+        header img {
+            max-height: 60px; /* Ajuste o tamanho da logo conforme necessário */
+        }
+        .menu {
+            flex: 1; /* Faz o menu ocupar o espaço restante */
+            display: flex;
+            justify-content: center; /* Centraliza o menu horizontalmente */
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .menu ul li a:hover {
+            color: #555;
         }
         .login-container {
             width: 300px;
@@ -22,6 +57,22 @@
         .login-container h2 {
             text-align: center;
             color: #333;
+        }
+        .back-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .back-button:hover {
+            background-color: #444;
         }
         .login-container form {
             display: flex;
@@ -47,6 +98,20 @@
     </style>
 </head>
 <body>
+
+<header>
+
+    <img src="imagens/B.png" alt="Logo" />
+    <div class="menu">
+        <ul>
+            <li><a href="cadastrar.php">Cadastrar-se</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.php">Serviços</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            
+        </ul>
+    </div>
+</header>
 
 <div class="login-container">
     <h2>Faça login</h2>

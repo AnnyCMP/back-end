@@ -11,29 +11,59 @@
             padding: 0;
         }
         header {
-            background-color: #d7b9a1;
-            padding: 20px;
-            text-align: center;
+            background-color: #978e8c; /* Cor do cabeçalho */
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        header img {
+            width: 100px; /* Ajuste do tamanho da logo */
+            height: auto;
+        }
+        .menu {
+            flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+            text-align: center; /* Centraliza o menu */
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centraliza os itens do menu */
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .menu ul li a:hover {
+            color: #ccc; /* Cor do texto ao passar o mouse */
         }
         .box {
-            width: 300px;
-            margin: 50px auto;
+            width: 350px;
+            margin: 55px auto;
             background: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box; /* Garante que o padding e border sejam incluídos no width */
         }
         .inputBox {
             position: relative;
             margin-bottom: 20px;
         }
         .inputUser {
-            width: 100%;
+            width: calc(100% - 20px); /* Subtrai a margem interna para ajustar ao contêiner */
             padding: 10px;
             font-size: 16px;
             border: none;
             border-bottom: 1px solid #999;
             outline: none;
+            box-sizing: border-box; /* Inclui padding e border no width total */
         }
         .inputUser:focus {
             border-bottom: 1px solid #555;
@@ -55,7 +85,7 @@
         }
         #submit {
             width: 100%;
-            background-color: #d7b9a1;
+            background-color: #978e8c; /* Cor igual ao cabeçalho */
             color: #fff;
             border: none;
             padding: 10px;
@@ -65,22 +95,23 @@
             transition: background-color 0.3s ease;
         }
         #submit:hover {
-            background-color: #ba9d85;
+            background-color: #776e6d; /* Cor mais escura para o efeito hover */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <nav>
+    <img src="imagens/B.png" alt="Logo" />
+    <div class="menu">
         <ul>
-            <li><a href="cadastro.php">Cadastrar-se</a></li>
+            <li><a href="cadastrar.php">Cadastrar-se</a></li>
             <li><a href="login.php">Entrar</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Profissionais</a></li>
-            <li><a href="#">Agendamentos</a></li>
+            <li><a href="servicos.php">Serviços</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="agendamentos.php">Agendamentos</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 
 <div class="box">

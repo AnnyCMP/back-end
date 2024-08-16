@@ -1,22 +1,24 @@
+<?php
+  ini_set('display_errors',1);
+  ini_set('display_startup_erros',1);
+  error_reporting(E_ALL);
+  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-   
 </head>
 <body>
     <div class="box">
-        
-        <form action="cadastro.php" method="POST">
+        <form action="cadastro.php" method="post">
             <fieldset>
                 <legend><b>Formulário de Clientes</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" id="cpf" name="cpf" class="inputUser" required>
+                    <input type="number" id="cpf" name="cpf" class="inputUser" required>
                     <label for="cpf" class="labelInput">CPF</label>
                 </div>
                 <br> 
@@ -36,16 +38,14 @@
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <input type="number" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
-                  <br>
-                    <label for="datan"><b>Data de Nascimento:</b></label>
-                    <input type="date" name="datan" id="datan" required class="data">
+                <br>
+                <label for="datan"><b>Data de Nascimento:</b></label>
+                <input type="date" name="datan" id="datan" required class="data">
                 <br><br><br>
-                
-               
-                <input type="submit" name="submit" id="submit" value="Cadastrar-se">
+                <input type="submit" id="submit" class="enviar" required value="Cadastrar-se">
             </fieldset>
         </form>
     </div>
