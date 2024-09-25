@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+header {
+    background-color: #978e8c; 
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-height: 270px;
+    vertical-align: middle;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.horarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horario {
+    width: 230px;
+    padding: 30px; /* Ajustado para uma melhor estética */
+    margin: 20px;
+    text-align: center;
+    background-color: #978e8c;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dia-agendamento {
+    padding: 5px;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Adicionando espaço abaixo do select */
+}
+
+.horario.agendado {
+    background-color: #d0d0d0;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.horario h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.horario p {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    color: #333;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Alterado para um layout mais simples */
+    text-align: center;
+}
+
+button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+.cancelar {
+    background-color: #dc3545;
+    font-size: 12px;
+}

@@ -114,7 +114,7 @@
 <body>
 
 <header>
-<img src="imagens/B.png" alt="Logo" />
+    <img src="imagens/B.png" alt="Logo" />
     <div class="menu">
         <ul>
             <li><a href="cadastrar.php">Cadastrar-se</a></li>
@@ -126,56 +126,9 @@
     </div>
 </header>
 
-<div class="container">
-    <h1>Serviços</h1>
-    
-    <div class="services">
-        <div class="service-card">
-            <img src="imagens/botox.webp" alt="Botox">
-            <p>Botox</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/micro.png" alt="Microagulhamento">
-            <p>Microagulhamento</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/silicone.webp" alt="Silicone">
-            <p>Silicone</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/lipo.jpg" alt="Lipoaspiração">
-            <p>Lipoaspiração</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/rino.jpg" alt="Rinoplastia">
-            <p>Rinoplastia</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/biche.jpeg" alt="Bichectomia">
-            <p>Bichectomia</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/microfocadofacial.png" alt="Microfocadofacial">
-            <p>Microfocado Facial</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-        <div class="service-card">
-            <img src="imagens/bioestimulador.png" alt="bioestimulador">
-            <p>Bioestimulador</p>
-            <button onclick="redirectToLogin()">Ir para Agendamento</button>
-        </div>
-    </div>
-</div>
-
 <script>
     function redirectToLogin() {
-        window.location.href = 'login.php?redirect=agendamentos.php'; // Redireciona para a página de login com parâmetro
+        window.location.href = 'login.html'; // Redireciona para a página de login
     }
 </script>
 
